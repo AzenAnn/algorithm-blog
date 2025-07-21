@@ -1,0 +1,197 @@
+/* 自定义样式文件 */
+
+/* 全局样式优化 */
+:root {
+  /* 自定义颜色变量 */
+  --color-primary: #3eaf7c;
+  --color-primary-light: #4abf8a;
+  --color-text: #2c3e50;
+  --color-border: #eaecef;
+  --color-bg-light: #fafbfc;
+}
+
+/* 代码块样式优化 */
+div[class*="language-"] {
+  border-radius: 8px;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+/* 代码块标题 */
+div[class*="language-"]:before {
+  background: var(--color-primary);
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+/* 表格样式优化 */
+table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+table th,
+table td {
+  border: 1px solid var(--color-border);
+  padding: 0.8rem 1rem;
+  text-align: left;
+}
+
+table th {
+  background-color: var(--color-bg-light);
+  font-weight: 600;
+}
+
+/* 引用块样式 */
+blockquote {
+  border-left: 4px solid var(--color-primary);
+  background-color: var(--color-bg-light);
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* 徽章样式 */
+.badge {
+  background: var(--color-primary);
+  border-radius: 12px;
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
+}
+
+/* 首页特色功能卡片 */
+.feature {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.feature:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* 导航栏优化 */
+.navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 侧边栏样式 */
+.sidebar-item {
+  border-radius: 4px;
+  margin: 0.2rem 0;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-item:hover {
+  background-color: var(--color-bg-light);
+}
+
+/* TOC 目录样式优化 */
+.table-of-contents {
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.table-of-contents h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-text);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 0.5rem;
+}
+
+.table-of-contents ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.table-of-contents li {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.table-of-contents a {
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 1px dotted transparent;
+  transition: all 0.3s ease;
+}
+
+.table-of-contents a:hover {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .feature {
+    margin: 0.5rem 0;
+    padding: 1rem;
+  }
+  
+  table {
+    font-size: 0.9rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.5rem;
+  }
+  
+  .table-of-contents {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+}
+
+/* 代码高亮优化 */
+.token.comment {
+  color: #999;
+  font-style: italic;
+}
+
+.token.keyword {
+  color: #e96900;
+  font-weight: bold;
+}
+
+.token.string {
+  color: #690;
+}
+
+.token.function {
+  color: #dd4a68;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-light);
+}
