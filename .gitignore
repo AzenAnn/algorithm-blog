@@ -1,0 +1,6 @@
+# 排除 node_modules（依赖包，无需提交）
+node_modules/
+# 排除其他临时文件（可选，根据项目情况添加）
+.DS_Store
+*.log
+dist/  # 如果有构建产物目录，也可以排除

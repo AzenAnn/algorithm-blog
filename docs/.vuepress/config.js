@@ -69,8 +69,10 @@ export default defineUserConfig({
             {
               text: '循环结构', // 子栏目3（修复：添加逗号）
               children: [
-                '/basic-syntax/loop-structure/'
-              ]
+                '/basic-syntax/loop-structure/',
+                '/basic-syntax/loop-structure/循环入门题.md'
+
+	      ]
             },
             {
               text: '数组', // 子栏目4（修复：添加逗号）
