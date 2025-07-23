@@ -16,7 +16,7 @@ export default defineUserConfig({
   description: '用代码探索算法之美，用C++编织逻辑之网',
 
   // 基础路径
-  base: '/',
+  base: '/algorithm-blog/',
 
   // 页面头部配置
   head: [
@@ -138,7 +138,7 @@ export default defineUserConfig({
     },
 
     // 仓库配置
-    repo: 'yourusername/cpp-algorithm-blog',
+    repo: 'https://github.com/AzenAnn/algorithm-blog',
     repoLabel: 'GitHub',
 
     // 编辑链接

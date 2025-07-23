@@ -1,16 +1,3 @@
 import comp from "G:/algorithm-blog/docs/.vuepress/.temp/pages/basic-syntax/sequential-structure/index.html.vue"
-const data = JSON.parse("{\"path\":\"/basic-syntax/sequential-structure/\",\"title\":\"📝 顺序结构\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"basic-syntax/sequential-structure/README.md\"}")
+const data = JSON.parse("{\"path\":\"/basic-syntax/sequential-structure/\",\"title\":\"顺序程序设计：算法竞赛新手的第一堂课\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"git\":{\"updatedTime\":1753164028000,\"contributors\":[{\"name\":\"AzenAnn\",\"username\":\"AzenAnn\",\"email\":\"annan2@mail2.sysu.edu.cn\",\"commits\":2,\"url\":\"https://github.com/AzenAnn\"}],\"changelog\":[{\"hash\":\"3980d7f0d75b92d2fa9bc58c7a0b12afbd1e8044\",\"time\":1753164028000,\"email\":\"annan2@mail2.sysu.edu.cn\",\"author\":\"AzenAnn\",\"message\":\"更新顺序结构的主要内容\"},{\"hash\":\"2d66fcefd0ab38170527c954f0efd63b12d36117\",\"time\":1753096099000,\"email\":\"annan2@mail2.sysu.edu.cn\",\"author\":\"AzenAnn\",\"message\":\"第一次博客提交\"}]},\"filePathRelative\":\"basic-syntax/sequential-structure/README.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

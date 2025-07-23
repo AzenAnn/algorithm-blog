@@ -1,16 +1,3 @@
 import comp from "G:/algorithm-blog/docs/.vuepress/.temp/pages/index.html.vue"
-const data = JSON.parse("{\"path\":\"/\",\"title\":\"🌟 Azen的算法刷题博客\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"README.md\"}")
+const data = JSON.parse("{\"path\":\"/\",\"title\":\"🌟 Azen的算法刷题博客\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"git\":{\"updatedTime\":1753165112000,\"contributors\":[{\"name\":\"AzenAnn\",\"username\":\"AzenAnn\",\"email\":\"annan2@mail2.sysu.edu.cn\",\"commits\":2,\"url\":\"https://github.com/AzenAnn\"}],\"changelog\":[{\"hash\":\"2abe2d2472e8c9edb4c629f5578cd4b88e337b3f\",\"time\":1753165112000,\"email\":\"annan2@mail2.sysu.edu.cn\",\"author\":\"AzenAnn\",\"message\":\"更新 docs 目录的 README 内容\"},{\"hash\":\"2d66fcefd0ab38170527c954f0efd63b12d36117\",\"time\":1753096099000,\"email\":\"annan2@mail2.sysu.edu.cn\",\"author\":\"AzenAnn\",\"message\":\"第一次博客提交\"}]},\"filePathRelative\":\"README.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
